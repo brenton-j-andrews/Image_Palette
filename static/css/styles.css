@@ -1,0 +1,45 @@
+/* Overall page styling */
+body {
+    margin: 0%;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Upper content wrapper styling */
+.upper-content-wrapper {
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #669fb2;
+    width: 100%;
+    padding: 50px;
+
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.sub-title {
+    margin: 12px;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #669fb2;
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
