@@ -1,50 +1,56 @@
-/* Overall page styling */
-body {
-    margin: 0%;
+/* Search "||" to jump sections. Page styling / imports / constants */
+@import url("meyer_reset.css");
+
+:root {
+    --app-light-gray: #D3D3D3;
+    --app-dark-gray: rgb(110, 108, 110);
 }
 
-.page-content {
+html, body {
+    height: 100%;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-/* Upper content wrapper styling */
-.upper-content-wrapper {
-    text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    background-color: #669fb2;
-    width: 100%;
-    padding: 50px;
-
-}
-
-.title {
-    font-size: 48px;
-    font-weight: 900;
-    margin: 0px;
-}
-
-.sub-title {
-    margin: 12px;
+    background-color: red;
 }
 
 /* Image Processor Styling */
-.image {
-    width: 50%;
-    height: auto;
+.color-extractor-wrapper {
+    height: 500px;
+    width: 400px;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--app-light-gray);
 }
 
-/* Footer styling */
-footer {
-    background-color: #669fb2;
-    width: 100%;
-    color: white;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
+#app-title {
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
+
+.picture-bin {
+    width: 80%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+

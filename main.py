@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     colors = processor()
-    return render_template("index.html", colors=colors)
+    return render_template("index.html", colors=colors, length=len(colors))
 
 
 if __name__ == "__main__":
