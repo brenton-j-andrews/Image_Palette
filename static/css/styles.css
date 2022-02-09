@@ -30,6 +30,11 @@ body {
     margin: 12px;
 }
 
+/* Image Processor Styling */
+.image {
+    width: 50%;
+    height: auto;
+}
 
 /* Footer styling */
 footer {
