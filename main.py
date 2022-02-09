@@ -1,11 +1,13 @@
 from flask import Flask, render_template
+from image_processor import processor
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello():
-    return render_template("index.html")
+    colors = processor()
+    return render_template("index.html", colors=colors)
 
 
 if __name__ == "__main__":
