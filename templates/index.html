@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Color Analyiser</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Image Color Generator</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
+
 <body>
     <div class="page-content">
 
@@ -20,9 +21,15 @@
             </div>
             <h5 class="sub-title"> Upload or link a photograph to find the most common colors present </h5>
         </div>
+
         <!-- Image color tool contents -->
         <div class="color-extractor-wrapper">
-
+            <img class="image" src="static/ginger.jpg" alt="a good dog">
+            {% for color in colors %}
+                <div class="color-palette" style="background-color: rgb({{color[0]}}, {{color[1]}}, {{color[2]}})">
+                    {{ color }}
+                </div>
+            {% endfor %}
         </div>
 
         <!-- Information panel -->
