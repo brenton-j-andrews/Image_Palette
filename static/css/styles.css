@@ -2,8 +2,9 @@
 @import url("meyer_reset.css");
 
 :root {
-    --app-light-gray: #D3D3D3;
-    --app-dark-gray: rgb(110, 108, 110);
+    --app-light-gray: #E2E8F0;
+    --app-medium-gray: #94A3B8;
+    --app-dark-gray: #6B7280;
 }
 
 html, body {
@@ -14,7 +15,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 /* Image Processor Styling */
@@ -22,11 +22,12 @@ html, body {
     height: 500px;
     width: 400px;
     border-radius: 25px;
+    padding: 15px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--app-light-gray);
+    background-color: var(--app-medium-gray);
 }
 
 #app-title {
@@ -36,17 +37,8 @@ html, body {
 }
 
 .picture-bin {
-    width: 80%;
-    height: 60%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    border: 1px solid black;
     border-radius: 25px;
 }
-
 
 .image {
     width: 100%;
@@ -54,3 +46,27 @@ html, body {
     border-radius: 25px;
 }
 
+/* || Color scroller styling */
+.color-scroller {
+    margin-top: 50px;
+    padding: 15px;   
+
+    width: 80%;
+    height: auto;
+
+    overflow: auto;
+    white-space: nowrap;
+
+    background-color: var(--app-light-gray);
+    border: 2px solid var(--app-dark-gray);
+    border-radius: 5px;
+}
+
+.color-scroller > * {
+    display: inline-block;
+    border: 2px solid var(--app-medium-gray);
+    border-radius: 5px;
+
+    width: 50px;
+    height: 50px;
+}

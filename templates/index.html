@@ -19,18 +19,14 @@
             </div>
 
             <div class="color-scroller">
-                test
-                {{ length }}
+                {% for color in colors %}
+            
+                    <div class="color-palette" style="background-color: rgb({{color[0]}}, {{color[1]}}, {{color[2]}})">
+                        &nbsp;
+                    </div>
+
+                {% endfor %}
             </div>
-
-
-            <!-- {% for color in colors %}
-
-                <div class="color-palette" style="background-color: rgb({{color[0]}}, {{color[1]}}, {{color[2]}})">
-                    hello
-                </div>
-
-            {% endfor %} -->
 
         </div>
 
